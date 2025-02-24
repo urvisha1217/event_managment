@@ -10,7 +10,7 @@
 
             <div class="relative z-10 flex flex-col justify-center text-white h-full px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
                 <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
-                    Exhibition Stands
+                    ALL BEAUTY
                 </h1>
                 <p class="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center sm:text-left">
                     We specialize in designing custom exhibition stands that leave a lasting impact. Our team creates
@@ -41,31 +41,33 @@
         </div>
 
         <!-- Responsive Grid -->
-        <div class="container mx-auto px-6 py-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                @foreach (['exhibition1.png', 'exhibition2.png', 'exhibition1.png', 'exhibition2.png', 'exhibition1.png', 'exhibition2.png'] as $index => $image)
-                    <div class="relative cursor-pointer" onclick="handleCardClick({{ $index + 1 }})">
-                        <img src="{{ asset('images/' . $image) }}" alt="Exhibition Stand"
-                            class="h-[25rem] object-cover mb-3 w-full">
-                        <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                            <p class="text-sm">Size: 200 SQM</p>
-                            <p class="text-sm">Location: Beauty World, Dubai</p>
-                        </div>
-                    </div>
-                @endforeach
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4  p-4 bg-white">
+                <div class="col-span-1 ">
+                    <img src="{{ asset('images/v1.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v2.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v3.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v4.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1 ">
+                    <img src="{{ asset('images/v5.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v6.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v7.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="col-span-1">
+                    <img src="{{ asset('images/v8.png') }}" alt="Exhibition 1" class="w-full h-64 object-cover">
+                </div>
             </div>
         </div>
     </section>
-
-    <script>
-        function handleCardClick(cardId) {
-            // Example: Redirect to a details page
-            window.location.href= `/views_of_services`
-           //window.location.href = `/exhibition-stand/${cardId}`;
-            
-            // Or simply show an alert for testing
-            // alert("You clicked on exhibition stand " + cardId);
-        }
-    </script>
 @endsection

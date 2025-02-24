@@ -1,20 +1,29 @@
 <header>
-    <!-- Top Bar -->
     <div class="bg-black text-white py-2">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-            <div class="text-sm flex items-center space-x-4 mb-2 md:mb-0">
-                <img src="{{ asset('images/phone.png') }}" alt="Phone" class="h-6 rounded-full">
-                <span>+971 558832713</span>
-                <img src="{{ asset('images/mail.png') }}" alt="mail" class="h-6 rounded-full">
-                <span>rj18technical@gmail.com</span>
-            </div>
-            <div class="flex space-x-3">
-                <a href="#" class="text-white"><img src="{{ asset('images/facebook-icon.png') }}" alt="Facebook" class="h-6 rounded-full"></a>
-                <a href="#" class="text-white"><img src="{{ asset('images/youtube-icon.png') }}" alt="YouTube" class="h-6 rounded-full"></a>
-                <a href="#" class="text-white"><img src="{{ asset('images/instagram-icon.jpg') }}" alt="Instagram" class="h-6 rounded-full"></a>
-            </div>
+    <div class="container mx-auto flex md:flex-row flex-col justify-between items-center px-4">
+        <!-- Contact Information Section -->
+        <div class="text-sm flex items-center space-x-2 mb-2">
+            <img src="{{ asset('images/phone.png') }}" alt="Phone" class="h-4 rounded-full">
+            <span class="text-xs sm:text-sm">+971 558832713</span>
+            <img src="{{ asset('images/mail.png') }}" alt="mail" class="h-6 rounded-full">
+            <span class="text-xs sm:text-sm">rj18technical@gmail.com</span>
+        </div>
+
+        <!-- Social Media Icons Section -->
+        <div class="flex space-x-2 mt-2">
+            <a href="#" class="text-white">
+                <img src="{{ asset('images/facebook-icon.png') }}" alt="Facebook" class="h-5 rounded-full">
+            </a>
+            <a href="#" class="text-white">
+                <img src="{{ asset('images/youtube-icon.png') }}" alt="YouTube" class="h-5 rounded-full">
+            </a>
+            <a href="#" class="text-white">
+                <img src="{{ asset('images/instagram-icon.jpg') }}" alt="Instagram" class="h-5 rounded-full">
+            </a>
         </div>
     </div>
+</div>
+
 
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-lg">
@@ -22,7 +31,7 @@
             <!-- Logo and Company Name -->
             <div class="flex items-center space-x-3">
                 <img src="{{ asset('images/logo.png') }}" alt="RJ 18 TECHNICAL" class="h-12">
-                <span class="text-xl font-bold text-black">RJ 18 TECHNICAL</span>
+                <span class="text-xl font-bold text-black">RJ 18 TECHNICAL SERVICES LLC</span>
             </div>
 
             <!-- Desktop Menu -->

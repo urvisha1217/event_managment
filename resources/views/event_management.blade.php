@@ -8,37 +8,35 @@
         <div class="relative h-[500px] bg-cover bg-center"
             style="background-image: url('{{ asset('images/contactUs.png') }}');">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            {{-- <div class="relative z-10 flex flex-col justify-center h-full text-white  px-6">
-                <h1 class="text-4xl md:text-5xl font-semibold">Exhibition Stands</h1>
-                <p class="mt-6 max-w-8xl text-lg">
+
+            <div class="relative z-10 flex flex-col justify-center text-white h-full px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
+                <!-- Heading with responsive font size -->
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
+                    Event Managment
+                </h1>
+
+                <!-- Paragraph with responsive font size and margin -->
+                <p class="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center sm:text-left">
                     We specialize in designing custom exhibition stands that leave a lasting impact. Our team creates
                     tailored solutions to perfectly represent your brand, ensuring high-quality craftsmanship and attention
                     to detail. From sleek modern designs to intricate setups, we focus on functionality, space optimization,
                     and visual appeal to attract and engage visitors. With years of experience, we manage every aspect of
                     the project, ensuring seamless execution and an exhibition stand that effectively showcases your
-                    products and enhances your event presence. </p> --}}
-                    <div class="relative z-10  flex flex-col justify-center text-white h-full  px-6 md:px-12  mx-auto">
-                        <h1 class="text-3xl md:text-5xl font-semibold">Event Managment</h1>
-                        <p class="mt-6 text-lg md:text-xl leading-relaxed">
-                            We specialize in designing custom exhibition stands that leave a lasting impact. Our team creates
-                            tailored solutions to perfectly represent your brand, ensuring high-quality craftsmanship and attention
-                            to detail. From sleek modern designs to intricate setups, we focus on functionality, space optimization,
-                            and visual appeal to attract and engage visitors. With years of experience, we manage every aspect of
-                            the project, ensuring seamless execution and an exhibition stand that effectively showcases your
-                            products and enhances your event presence.
-                        </p>
-               <div
-                    class="mt-2 flex"> 
-                    <a href="{{ url('/contact_us') }}"
-                    class="items-center flex gap-4 px-8 py-2 bg-white text-black text-lg font-semibold rounded-full shadow-lg border border-gray-300 hover:bg-gray-100 transition"
-                        {{-- class="absolute left-[24px] top-[364px] w-[210px] h-[42px] flex items-center gap-12 px-6 py-3 bg-white text-black text-lg font-semibold rounded-full shadow-lg border border-gray-300 hover:bg-gray-100 transition" --}}
-                        >
-                        Contact us
-                        <span class="text-xl ">↗</span>
-                    </a>
-                </div> 
+                    products and enhances your event presence.
+                </p>
 
+                <!-- Button with responsive padding, margin, and font size -->
+                <div class="mt-4 sm:mt-6 flex justify-center">
+                    <a href="{{ url('/contact_us') }}"
+                        class="items-center flex gap-4 px-6 py-2 sm:px-8 sm:py-3 bg-white text-black text-base sm:text-lg font-semibold rounded-full shadow-lg border border-gray-300 hover:bg-gray-100 transition">
+                        Contact us
+                        <i class="fa-solid fa-arrow-up-right-from-square"  style='font-size:18px'></i>
+                    </a>
+                </div>
             </div>
+
+
+
 
             <!-- WhatsApp Floating Button -->
             <div class="absolute bottom-4 right-4 z-30">
@@ -53,71 +51,83 @@
                 </a>
             </div>
         </div>
-        <!-- Responsive Grid -->
-        <div class="container mx-auto px-6 py-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Responsive Grid -->
+            <div class="container mx-auto px-6 py-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Card 1 -->
-                <div class="relative">
-                    <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 1 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="relative">
-                    <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 2 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
-                </div>
 
-                 <!-- Card 3 -->
-                 <div class="relative">
-                    <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 3 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
-                </div>
 
-                 <!-- Card 4 -->
-                 <div class="relative">
-                    <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 4 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
-                </div>
 
-                 <!-- Card 5 -->
-                 <div class="relative">
-                    <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 5 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition1.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
-                </div>
 
-                 <!-- Card 6 -->
-                 <div class="relative">
-                    <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty" class="h-[25rem] object-cover mb-3 w-full">
-                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
-                        <h3 class="text-xl font-bold">ALL BEAUTY</h3>
-                        <p class="text-sm">Size: 200 SQM</p>
-                        <p class="text-sm">Location: Beauty World, Dubai</p>
+                    <!-- Card 6 -->
+                    <div class="relative">
+                        <img src="{{ asset('images/exhibition2.png') }}" alt="All Beauty"
+                            class="h-[25rem] object-cover mb-3 w-full">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black to-transparent w-full text-white">
+                            <h3 class="text-xl font-bold">ALL BEAUTY</h3>
+                            <p class="text-sm">Size: 200 SQM</p>
+                            <p class="text-sm">Location: Beauty World, Dubai</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </section>
 @endsection

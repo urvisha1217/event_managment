@@ -86,10 +86,10 @@
 <!-- Existing Sections Here -->
 <div class="container mx-auto px-6 py-10">
   <!-- Grid Layout -->
-  <div class="grid grid-cols-1 md:grid-cols-2 bg-blue">
-      <!-- Card 1 -->
+  <!-- <div class="grid grid-cols-1 md:grid-cols-2 bg-blue">
+     
       <div class="flex flex-col md:flex-row bg-gray-200 shadow-lg  overflow-hidden w-full">
-          <img src="{{ asset('images/1.png') }}" alt="Experienced Leadership" class="md:w-1/2 object-cover">
+          <img src="{{ asset('images/1.jpeg') }}" alt="Experienced Leadership" class="md:w-1/2 object-cover">
           <div class="p-6 w-1/2">
               <h3 class="text-xl font-bold mb-2">1. Experienced Leadership</h3>
               <p class="text-gray-600">
@@ -135,9 +135,64 @@
                   offering high-quality craftsmanship for both interior designs and event-related wood installations.
               </p>
           </div>
-          <img src="{{ asset('images/4.png') }}" alt="Experienced Leadership" class="md:w-1/2 object-cover">
+          <img src="{{ asset('images/5.jpeg') }}" alt="Experienced Leadership" class="md:w-1/2 object-cover">
       </div>
-  </div>
+  </div> -->
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  bg-blue p-4">
+    <!-- Card 1 -->
+    <div class="flex flex-col md:flex-row bg-gray-200 shadow-lg overflow-hidden w-full">
+        <img src="{{ asset('images/1.jpeg') }}" alt="Experienced Leadership"
+            class="w-full md:w-1/2 object-cover h-60 md:h-auto">
+        <div class="p-6 flex-1">
+            <h3 class="text-lg md:text-xl font-bold mb-2">1. Experienced Leadership</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                RJ 18 Technical Service is led by Mr. Pankaj Jangid and Mr. Babulal Jangid, both possessing 
+                extensive industry knowledge, ensuring strong leadership and exceptional service delivery in all projects.
+            </p>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col md:flex-row bg-gray-200 shadow-lg overflow-hidden w-full">
+        <img src="{{ asset('images/2.png') }}" alt="Skilled Workforce"
+            class="w-full md:w-1/2 object-cover h-60 md:h-auto">
+        <div class="p-6 flex-1">
+            <h3 class="text-lg md:text-xl font-bold mb-2">2. Skilled Workforce</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                The company employs a dedicated team of 4 highly skilled staff members and 25 experienced
+                workers, specializing in joinery work, ensuring top-notch craftsmanship and efficient project execution.
+            </p>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex flex-col md:flex-row bg-gray-200 shadow-lg overflow-hidden w-full">
+        <div class="p-6 flex-1">
+            <h3 class="text-lg md:text-xl font-bold mb-2">3. Specialized in Exhibition</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                RJ 18 excels in designing and crafting custom wooden furniture and structures for exhibitions and events,
+                delivering functional, aesthetic solutions tailored to client needs and spaces.
+            </p>
+        </div>
+        <img src="{{ asset('images/3.png') }}" alt="Specialized in Exhibition"
+            class="w-full md:w-1/2 object-cover h-60 md:h-auto">
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flex flex-col md:flex-row bg-gray-200 shadow-lg overflow-hidden w-full">
+        <div class="p-6 flex-1">
+            <h3 class="text-lg md:text-xl font-bold mb-2 mx-3">4. Expertise in Woodworks</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                With over 10 years of experience, RJ 18 specializes in bespoke woodwork,
+                offering high-quality craftsmanship for both interior designs and event-related wood installations.
+            </p>
+        </div>
+        <img src="{{ asset('images/5.jpeg') }}" alt="Expertise in Woodworks"
+            class="w-full md:w-1/2 object-cover h-60 md:h-auto">
+    </div>
+</div>
+
+
 </div>
 
 <section class="container mx-auto px-6 py-10">
@@ -149,7 +204,7 @@
               ['name' => 'EVENT MANAGEMENT', 'image' => 's2.png'],
               ['name' => 'AV SERVICE', 'image' => 's3.png'],
               ['name' => 'INTERIOR DESIGN', 'image' => 's4.png'],
-              ['name' => 'MALL KIOSK', 'image' => 's5.png'],
+              ['name' => 'MALL KIOSK', 'image' => 'abc.jpeg'],
           ];
       @endphp
       @foreach($services as $service)

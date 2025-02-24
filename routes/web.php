@@ -41,3 +41,7 @@ Route::get('/interior_design', function () {
 Route::get('/mall_kiosk', function () {
     return view('mall_kiosk');
 });
+
+Route::get('/views_of_services', function () {
+    return view('views_of_services');
+});
